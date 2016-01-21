@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:initialLayout="@layout/widget_today"
+    android:minWidth="@dimen/widget_today_default_width"
+    android:minHeight="@dimen/widget_today_default_height"
+    android:minResizeWidth="@dimen/widget_today_min_resize_width"
+    android:minResizeHeight="@dimen/widget_today_min_resize_height"
+    android:resizeMode="horizontal"
+    android:updatePeriodMillis="0"
+    tools:ignore="UnusedAttribute"/>
+<!--
+updatePeriodMillis = 0 means disable update, because this app shows static data.
+Good formula for minWidth and minHeight
+Size = 70dp * n - 30dp
+n means one grid: refer to And How Do We Build Them? -> Advanced Android dev course
+i.e. n=1 -> 40dp...
+-->
